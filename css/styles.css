@@ -747,6 +747,8 @@ address {
   opacity: 1;
   scale: 1;
   transition: transform 250ms linear;
+  padding: 40px;
+  border-radius: 4px;
 }
 .close-modal {
   width: 30px;
@@ -762,4 +764,104 @@ address {
   fill: #000000;
   width: 11px;
   height: 11px;
+}
+/* ====== form ====== */
+.form {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-text-color);
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15em;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.form label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+}
+.input {
+  display: block;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  min-height: 40px;
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+.fake-input {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form textarea {
+  padding: 12px;
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 20px;
+}
+textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-field {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.form a {
+  text-decoration: underline;
+  color: #2196f3;
+}
+label.policy {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+}
+input[type="checkbox"] {
+  margin-bottom: 0;
+  margin-right: 7px;
+}
+.submit {
+  display: block;
+  min-width: 200px;
+  min-height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87em;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-ico {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  margin: 11px 12px;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.fake-input:hover .form-ico,
+.input:focus .form-ico {
+  fill: #188ce8;
 }

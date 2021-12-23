@@ -246,10 +246,42 @@
         </section>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, magni!</p>
+                <form class="form">
                 <button type="button" class="close-modal" data-modal-close><svg class="cross">
-                    <use href="./images/cross.svg#icon-cross"></use>
+                    <use href="./images/icons.svg#icon-cross"></use>
                 </svg></button>
+                <h4>Оставьте свои данные, мы вам перезвоним</h4>
+                <label for="user-name">Имя</label>
+                <div class="fake-input">
+                <input type="text" name="name" id="user-name" class="input">
+                <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+                    
+            </div>
+                <label for="user-phone">Телефон</label>
+                <div class="fake-input">
+                <input type="tel" name="phone" id="user-phone" class="input">
+                <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>    
+            </div>
+                <label for="user-email">Почта</label>
+                <div class="fake-input">
+                <input type="email" name="email" id="user-email" class="input">
+                <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+                    
+            </div>
+                <label for="user-comment">Коментарий</label>
+                <textarea name="comment" id="user-comment" placeholder="Введите текст" class="input"></textarea>
+                <div class="form-field">
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                </div>
+                <button type="submit" class="submit">Отправить</button>
+                </form>
             </div>
         </div>
     </main>
