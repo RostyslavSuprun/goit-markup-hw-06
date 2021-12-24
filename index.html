@@ -246,42 +246,48 @@
         </section>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <form class="form">
+            <form class="form">
                 <button type="button" class="close-modal" data-modal-close><svg class="cross">
-                    <use href="./images/icons.svg#icon-cross"></use>
-                </svg></button>
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg></button>
                 <h4>Оставьте свои данные, мы вам перезвоним</h4>
                 <label for="user-name">Имя</label>
                 <div class="fake-input">
-                <input type="text" name="name" id="user-name" class="input">
-                <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
-                    
-            </div>
+                    <input type="text" name="name" id="user-name" class="input">
+                    <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+            
+                </div>
                 <label for="user-phone">Телефон</label>
                 <div class="fake-input">
-                <input type="tel" name="phone" id="user-phone" class="input">
-                <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
-                    <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg>    
-            </div>
+                    <input type="tel" name="phone" id="user-phone" class="input">
+                    <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
+                </div>
                 <label for="user-email">Почта</label>
                 <div class="fake-input">
-                <input type="email" name="email" id="user-email" class="input">
-                <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
-                    <use href="./images/icons.svg#icon-email-black"></use>
-                </svg>
-                    
-            </div>
+                    <input type="email" name="email" id="user-email" class="input">
+                    <svg class="form-ico" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
+            
+                </div>
                 <label for="user-comment">Коментарий</label>
                 <textarea name="comment" id="user-comment" placeholder="Введите текст" class="input"></textarea>
                 <div class="form-field">
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                    <input type="checkbox" name="policy" id="policy" class="policy-checkbox">
+                    <svg class="checkbox-unchecked">
+                        <use href="./images/icons.svg#icon-uncheck"></use>
+                    </svg>
+                    <svg class="checkbox-checked">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
                 </div>
                 <button type="submit" class="submit">Отправить</button>
-                </form>
+            </form>
             </div>
         </div>
     </main>
@@ -323,6 +329,16 @@
                 </a>
             </div>
         </div>
+        <form action="" class="footer-form">
+            <label for="footer-email" class="sign"  >Подпишитесь на рассылку</label>
+            <div class="footer-box">
+            <input type="email" id="footer-email" class="footer-input" name="footer-email" placeholder="E-mail">
+            <button type="submit" class="footer-button">Подписаться <svg class="ico-send">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+            </button>
+            </div>
+        </form>
             </div>  
     </footer>
         <script src="./js/modal.js"></script>
