@@ -760,6 +760,7 @@ address {
   border-radius: 50%;
   position: absolute;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   box-sizing: border-box;
   top: 8px;
   right: 8px;
@@ -948,7 +949,35 @@ input[type="checkbox"] {
 .footer-button:focus {
   background-color: #188ce8;
 }
-svg.checkbox-checked,
+.agree-icon {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icon_check.svg);
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.policy {
+  display: flex;
+  align-items: center;
+}
+.policy-checkbox:checked + .agree-icon {
+  background-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+}
+.policy-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* svg.checkbox-checked,
 svg.checkbox-unchecked {
   width: 16px;
   height: 15px;
@@ -975,4 +1004,4 @@ svg.checkbox-unchecked {
 }
 .policy-checkbox:checked ~ .checkbox-checked {
   visibility: visible;
-}
+} */
